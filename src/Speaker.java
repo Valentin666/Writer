@@ -14,6 +14,7 @@ public class Speaker {
     public static void main(String[] args) {
         HelloSpeachWriter writer = new HelloSpeachWriter();
         Speaker speaker = new Speaker(writer);
+        speaker.speak();
         GoSpeachWriter writer2 = new GoSpeachWriter();
         Speaker speaker2 = new Speaker(writer2);
         speaker2.speak();

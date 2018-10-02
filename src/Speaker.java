@@ -1,8 +1,8 @@
 public class Speaker {
 
-    private GoSpeachWriter writer;
+    private SpeachWriter writer;
 
-    public  Speaker(GoSpeachWriter writer){
+    public  Speaker(SpeachWriter writer){
         this.writer=writer;
     }
 
@@ -12,8 +12,8 @@ public class Speaker {
     }
 
     public static void main(String[] args) {
-//        HelloSpeachWriter writer = new HelloSpeachWriter();
-//        Speaker speaker = new Speaker(writer);
+        HelloSpeachWriter writer = new HelloSpeachWriter();
+        Speaker speaker = new Speaker(writer);
         GoSpeachWriter writer2 = new GoSpeachWriter();
         Speaker speaker2 = new Speaker(writer2);
         speaker2.speak();
